@@ -1,0 +1,16 @@
+tensorflow
+gym
+Pillow
+matplotlib
+numpy
+jupyter
+pytest
+docopt
+pyyaml
+unityagents
+protobuf
+grpcio
+pandas
+scipy
+ipykernel
+google
