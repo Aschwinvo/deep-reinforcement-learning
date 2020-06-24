@@ -4,7 +4,7 @@
 
 # Project 1: Navigation
 
-### Introduction
+## Introduction
 
 For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
 
@@ -20,7 +20,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
-### Getting Started
+## Getting Started
 
 For this project to function correctly the following needs to be installed:
 
@@ -31,7 +31,7 @@ For this project to function correctly the following needs to be installed:
 After that we will do the following:
 
 4. Create a new virtual environment.
-5. Download this git repository from [here](https://github.com/Aschwinvo/deep-reinforcement-learning.git) and install dependencies required to run this code.
+5. Download this git repository [here](https://github.com/Aschwinvo/deep-reinforcement-learning.git) and install dependencies required to run this code.
 6. Create a jupyter kernel to be able to run the notebook.
 
 And finally:
@@ -39,7 +39,7 @@ And finally:
 7. Download the Banana game and place it in the correct directory.
 8. Run the notebook and observe our trained agent.
 
-## Steps 4, 5, and 6.
+### Steps 4, 5, and 6.
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
@@ -68,7 +68,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ```
 Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-## Steps 7 and 8
+### Steps 7 and 8
 
 7. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
@@ -84,7 +84,7 @@ Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, a
 
 8. Follow the instructions in `Deep_Q_Network_Solution` to get started with training a DQN agent or watch it play!  
 
-### (Optional) Challenge: Learning from Pixels
+## (Optional) Challenge: Learning from Pixels
 
 After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
 
