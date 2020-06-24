@@ -31,7 +31,7 @@ For this project to function correctly the following needs to be installed:
 After that we will do the following:
 
 4. Create a new virtual environment.
-5. Download this git repository [here](https://github.com/Aschwinvo/deep-reinforcement-learning.git) and install dependencies required to run this code.
+5. Download this git repository [here](https://github.com/Aschwinvo/deep-reinforcement-learning-navigation.git) and install dependencies required to run this code.
 6. Create a jupyter kernel to be able to run the notebook.
 
 And finally:
@@ -62,7 +62,7 @@ To set up your python environment to run the code in this repository, follow the
 	
 5. Clone the repository (if you haven't already!) and install several dependencies into your virtual environment. Find the correct PyTorch installation [here](https://pytorch.org/get-started/locally/)
 ```bash
-git clone https://github.com/Aschwinvo/deep-reinforcement-learning.git
+git clone https://github.com/Aschwinvo/deep-reinforcement-learning-navigation.git
 pip install -r requirements.txt
 pip install "YOUR LINK TO PYTORCH"
 ```
@@ -87,7 +87,7 @@ Before running code in a notebook, change the kernel to match the `drlnd` enviro
 
 Place the file in the DRLND GitHub repository and unzip (or decompress) the file. 
 
-8. Follow the instructions in `Deep_Q_Network_Solution` to get started with training a DQN agent or watch it play!  
+8. Follow the instructions in the notebook `Deep_Q_Network_Solution` to get started with training a DQN agent or watch it play!  
 
 ## (Optional) Challenge: Learning from Pixels
 
