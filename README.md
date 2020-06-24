@@ -22,7 +22,55 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Getting Started
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+For this project to function correctly the following needs to be installed:
+
+1. Python [here](https://www.anaconda.com/products/individual).
+2. GIT version control [here](https://git-scm.com/downloads).
+3. Download and install Unity [here](https://unity3d.com/get-unity/download).
+
+After that we will do the following:
+
+4. Create a new virtual environment.
+5. Download this git repository from [here](https://github.com/Aschwinvo/deep-reinforcement-learning.git) and install dependencies required to run this code.
+6. Create a jupyter kernel to be able to run the notebook.
+
+And finally:
+
+7. Download the Banana game and place it in the correct directory.
+8. Run the notebook and observe our trained agent.
+
+## Steps 4, 5, and 6.
+
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+4. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+	
+5. Clone the repository (if you haven't already!) and install several dependencies into your virtual environment.
+```bash
+git clone https://github.com/Aschwinvo/deep-reinforcement-learning.git
+pip install .
+```
+
+6. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+```bash
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
+Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
+
+## Steps 7 and 8
+
+7. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -32,11 +80,9 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
 
-### Instructions
-
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+8. Follow the instructions in `Deep_Q_Network_Solution` to get started with training a DQN agent or watch it play!  
 
 ### (Optional) Challenge: Learning from Pixels
 
