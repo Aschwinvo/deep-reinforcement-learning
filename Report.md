@@ -73,5 +73,13 @@ UPDATE_EVERY = 4        # how often to update the network
 
 We want to make sure we play a few episodes before improving the network to make sure that we learn information from our new parameters first.
 
+### Plot
+
+For a plot of the rewards of our DQN agent please open the Deep_Q_Network.ipynb notebook.
+
+### Further Improvements
+
+For further improvements we have implemented Double Q networks as well as dueling Q networks.
+
 
 
