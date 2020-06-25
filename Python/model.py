@@ -46,6 +46,8 @@ class DUELQNetwork(nn.Module):
         """
         super(DUELQNetwork, self).__init__()
         self.seed = torch.manual_seed(seed)
+        self.action_size = action_size
+        
         self.fc1 = nn.Linear(state_size, fc1_units)
         self.fc2 = nn.Linear(fc1_units, fc2_units)
         self.fc3 = nn.Linear(fc2_units, fc3_units)
@@ -66,7 +68,7 @@ class DUELQNetwork(nn.Module):
         val = F.relu(self.fc4_val(x))
 
         adv = self.fc5_adv(adv)
-        val = self.fc5_val(val).expand(x.size(0), self.num_actions)
+        val = self.fc5_val(val).expand(x.size(0), self.action_size)
 
-        return val + adv - adv.mean(1).unsqueeze(1).expand(x.size(0), self.num_actions)
+        return val + adv - adv.mean(1).unsqueeze(1).expand(x.size(0), self.action_size)
 
