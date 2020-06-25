@@ -1,6 +1,7 @@
 from dqn_agent import *
+from model import DUELQNetwork
 
-class ddqn_agent(Agent):
+class duel_ddqn_agent(Agent):
     '''
     Modified version of DQN that incorporates DDQN
     '''
@@ -15,7 +16,12 @@ class ddqn_agent(Agent):
             seed (int): random seed
         """
 
-        super(ddqn_agent, self).__init__(state_size, action_size, seed)
+        super(duel_ddqn_agent, self).__init__(state_size, action_size, seed)
+
+        # Q-Network
+        self.qnetwork_local = DUELQNetwork(state_size, action_size, seed).to(device)
+        self.qnetwork_target = DUELQNetwork(state_size, action_size, seed).to(device)
+        self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)
 
         # Replay memory
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
